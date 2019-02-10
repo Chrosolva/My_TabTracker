@@ -21,7 +21,7 @@ export default {
   },
   methods: {
     async register () {
-      await AuthenticationServices.register({
+      const response = await AuthenticationServices.register({
         email: this.email,
         password: this.password
       })
